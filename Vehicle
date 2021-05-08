@@ -1,6 +1,6 @@
 The Vehicle type is used to assign sounds to vehicles.
 
-It is used to assign a variety of vehicle-related sounds to a vehicle model, including its engine, transmission, suspension, horn, doors, sirens and interior sounds.
+It is used to assign a variety of vehicle-related sounds to a vehicle model, including its engine, transmission, suspension, horn, radio, doors, sirens and interior sounds.
 
 Fields:
 
