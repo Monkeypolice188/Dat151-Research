@@ -2,7 +2,7 @@ The VehicleScannerParams type is used by the police scanner to identify a vehicl
 
 It is used to assign a manufacturer, model, category and colour to a vehicle. 
 
-The police scanner will refer to a vehicle by its current color so long as the Unk04 entry is blank, or the vehicle does not have FLAG_HAS_LIVERY in vehicles.metahash
+The police scanner will refer to a vehicle by its current color so long as the Unk04 entry is blank, or the vehicle does not have FLAG_HAS_LIVERY in vehicles.meta
 
 The police scanner will pair up either the manufacturer or color override with either the model or the category entries.
 
