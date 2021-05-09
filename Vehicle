@@ -83,15 +83,37 @@ The Unk00 value represents basic vehicle flags which seem to control various asp
 
 The Unk00 flag reads "0xXXXXXXXX" where "X" represents the following digits in respective order:
 
-Bit offset            | 1		 | 2 		| 4		| 8										
-First value 		n/a		 n/a
-Second value 		n/a	 n/a
-Third value 		n/a 		n/a	
-Fourth value 		n/a 		truck CB radio		 n/a
-Fifth value 		n/a
-Sixth value												smooth gear changing
-Seventh value		truck brakes 					door ajar chime
-Eigth value												reversing beeper
+0x10000000 - ?  //most vehicles except some trucks/obscure vehicles
+>0x20000000
+>0x40000000
+0x80000000 - ? //all vehicles
+0x01000000 - ? //vans and some older cars
+>0x02000000
+0x04000000 - ? //some motorcycles
+0x00100000 - ? //most single-speed vehicles - tractors and caddies
+>0x00200000
+0x00400000 - ? //many super cars
+>0x00800000
+0x00010000 - ? //rc bandito
+>0x00020000
+0x00040000 - CB radio //some trucks and older/beater vehicles
+>0x00080000
+0x00001000 - ? //all vans/trucks/suvs/utility vehicles/motorcycles
+>0x00002000
+0x00004000 - ? //all vehicles except aseas
+>0x00008000
+0x00000100 - ? //all motorcycles
+0x00000200 - ? //all vehicles except motorcycles and emperors
+0x00000400 - ? //all trucks and utility vehicles
+0x00000800 - smooth gearing //most vehicles except trucks
+0x00000010 - truck brake sounds //most trucks
+0x00000020 - ? //all vehicles except trucks
+0x00000040 - door-ajar chime //most executive cars
+0x00000080 - ? //monster trucks, boxville5, wastelander, rhapsody, blade, peyote2?
+0x00000001 - ? //most super and sports cars
+>0x00000002
+0x00000004 - reversing beeper //most trucks and utility vehicles
+0x00000008 - ? //most vehicles
 
 RadioFlags
 The RadioFlag value represents what radio station is chosen to play upon entry of the vehicle. 
@@ -104,33 +126,30 @@ Only the first, second, fourth and eighth values of this flag value are used.
 
 The RadioFlag flag reads "0xXXXXXXXX" where "X" represents the following digits in respective order:
 
-Bit offset            | 1			| 2			| 3			| 4			| 5			| 6			| 7			  | 8			    | 9			  | A			| B			   | C			| D			| E			| F
-First value            ? //radio off override?                                                                                                                                                                                                                                                                                                   
-Second value      rock         off          pop       rap         off         punk      left-talk   right-talk  country   dance     mexican  reggae   jazz        funk      off
-Third value 
-Fourth value              enable radio              emergency radio               ?                                                                                                                                                                                                                                      
-Fifth value
-Sixth value                                                                                                                                                                                                                                                                                                             
-Seventh value
-Eighth value                   ?                           ?                                                                                                                                                                                                                                                             
-
-The genre categories are as follows:
-2/5/F off       Radio Off
-1 rock          Los Santos Rock Radio, Radio Mirror Park, KULT FM.
-3 pop           Non-Stop Pop FM and Still Slipping Los Santos.
-4 rap           West Coast Classics, Radio Los Santos, The Lab.
-6 punk          Channel X
-7 left-talk     West Coast Talk Radio
-8 right-talk    Blaine County Radio
-9 country       Rebel Radio
-A dance         FlyLo FM, Soulwax FM, Music Locker Radio
-B mexican       East Los FM
-C reggae        Blue Ark FM
-D jazz          Worldwide FM
-E funk          The Lowdown and Space 103.2
-
-
-
+0x10000000 - ? //radio-off override?
+0x01000000 - rock //Los Santos Rock Radio, Radio Mirror Park, Vinewood Boulevard Radio, KULT FM
+0x02000000 - off
+0x03000000 - pop //Non-Stop Pop FM and Still Slipping Los Santos.
+0x04000000 - rap //West Coast Classics, Radio Los Santos, The Lab.
+0x05000000 - off
+0x06000000 - punk //Channel X
+0x07000000 - left-talk //West Coast Talk Radio
+0x08000000 - right-talk //Blaine County Talk Radio (only in Blaine County, random everywhere else)
+0x09000000 - country //Rebel Radio
+0x0A000000 - dance //FlyLo FM, Soulwax FM, Music Locker Radio, Los Santos Underground Radio
+0x0B000000 - mexican //East Los FM
+0x0C000000 - reggae //Blue Ark FM
+0x0D000000 - jazz //Worldwide FM
+0X0E000000 - funk //The Lowdown and Space 103.2
+0x0F000000 - off
+0x00010000 - enable radio //toggles radio wheel option
+0x00020000 - emergency radio //toggles police scanner chatter radio
+0x00030000 - ? //stockade - both?
+0x00000100 - ? //variety of civilian vehicles
+0x00000001 - ? //variety of higher-end vehicles
+0x00000002 - ? //variety of mid-low end vehicles
+0x00000003 - ? //stretch, dilletantes, limo2, cogcabrio, romero
+0x00000004 - ? //rcbandio, mower, caddy, forklift
 
 Example:
 
