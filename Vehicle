@@ -84,14 +84,14 @@ The Unk00 value represents basic vehicle flags which seem to control various asp
 The Unk00 flag reads "0xXXXXXXXX" where "X" represents the following digits in respective order:
 
 Bit offset            | 1		 | 2 		| 4		| 8										
-First value n/a		 n/a
-Second value n/a	 n/a
-Third value n/a 		n/a	
-Fourth value n/a 		truck CB radio		 n/a
-Fifth value n/a
-Sixth value														smooth gear changing
-Seventh value	truck brakes 							door ajar chime
-Eigth value														reversing beeper
+First value 		n/a		 n/a
+Second value 		n/a	 n/a
+Third value 		n/a 		n/a	
+Fourth value 		n/a 		truck CB radio		 n/a
+Fifth value 		n/a
+Sixth value												smooth gear changing
+Seventh value		truck brakes 					door ajar chime
+Eigth value												reversing beeper
 
 RadioFlags
 The RadioFlag value represents what radio station is chosen to play upon entry of the vehicle. 
