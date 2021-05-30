@@ -81,7 +81,7 @@ Only the last three digits of the flag value are used.
 
 0xAAAAA900 - ? //all vehicles
 0xAAAAA010 - enables exhaust pop sounds
-0xAAAAA040 - enables exhaust pop particle effects
+0xAAAAA040 - enables exhaust pop particle effects (requires exhaust pop sound flag)
 0xAAAAA001 - ? //higher end cars and sports cars
 0xAAAAA004 - ? //all vehicles
 
